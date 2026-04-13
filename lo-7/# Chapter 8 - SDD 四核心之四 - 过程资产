@@ -1,0 +1,9 @@
+# Chapter 8 - SDD 四核心之四 - 过程资产
+## 完成以下任务:
+### 1, 复习：Vibe Coding 和 SDD ，在流程上的最大区别是什么？
+### 2, 问题：如何执行 Learn & Iterate 步骤？
+### 3，使用 adr (Architecture Decision Record) 管理过程资产
+### 4，分组练习，形成过程资产
+#### 第一步：让 AI 帮忙写一个 Retrospective 技能，用户总结过程资产，支持持续改进
+#### 第二步：开一个简短的 retrospective, 并让 AI 使用 Retrospective 技能帮忙形成过程资产
+### 5，问一下AI，如何确保每次开始新任务之前，adr 目录下的过程资产会被自动加载？

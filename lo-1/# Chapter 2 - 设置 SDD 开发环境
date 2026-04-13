@@ -1,0 +1,50 @@
+# Chapter 2 - 设置 SDD 开发环境
+## 完成以下任务：
+### # 1，安装 SDD 开发工具
+推荐:
+| 地区 | IDE | 备注 | URL|
+| --- | --- | --- | --- |
+|China mainland| TRAE CN| 免费| https://trae.cn/ |
+|China mainland| Cursor | 免费版有token限制 |Https://www.cursor.com/downloads|
+
+### # 2，安装依赖项
+
+#### 第一步，下载 sdd-env[依赖项安装包]：
+|操作系统|下载链接|
+|--|--|
+|Mac| |
+|Windows| |
+
+#### 第二步，解压缩文件夹[sdd-env] ，将目录名"Your-project-name" 改为 “playwhere”。
+这样，你就完成了：
+- 实例项目的初始文件夹就设置完毕
+- 大部分的依赖项加载完毕
+
+### # 3 从 git repository 获取最新代码
+
+#### 第一步，从第一步安装的 SDD 开发工具中，用“从文件夹打开”选项，打开第二步设置的 playwhere 目录
+#### 第二步，获取最新代码
+
+##### 做法1：向 AI 输入指令：
+```
+从以下 git repository 获取最新代码：
+https://gitee.com/woodsw0rd/playwhere.git  
+```
+
+##### 做法2：直接在终端输入:
+```
+git clone https://gitee.com/woodsw0rd/playwhere.git
+```
+
+### # 4 运行 “去哪玩” app
+
+##### 做法1：向 AI 输入指令：
+```
+run the app
+```
+
+##### 做法2：直接在终端输入:
+```
+npm run dev
+```
+

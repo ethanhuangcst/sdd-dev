@@ -1,0 +1,64 @@
+Chapter 4 Spec-Driven Development 第一步：根据 spec Init.md 初始化项目
+
+# 通过完成以下任务，来初始化 “吃点啥” 项目：
+## 第一步：全新创建一个文件夹 “eatwhat”, 并从该文件夹打开IDE
+## 第二步：在根目录新建一个 init.md 文件, 并在其中添加以下内容:
+```
+# web app：吃点啥
+## 主要功能
+### 根据用户喜好，利用AI，生成每日家常菜谱
+### 用户可以踩不喜的菜谱, 或者赞喜欢的菜谱
+### AI应该学习用户的喜好, 为用户生成用户画像, 从而更精准的提供用户喜欢的菜谱
+### 后续根据用户反馈,增加新的功能,需要考虑扩展性
+
+## 技术栈
+### 前端
+- Next.js 15或以上 (React 框架, 支持SSR/SSG)
+- TypeScript (类型安全)
+- Tailwind CSS (样式)
+### 后端
+- Next.js API Routes (服务端接口)
+- Prisma (ORM, 数据库操作)
+### 数据库
+- PostgreSQL (存储用户数据、菜谱、偏好记录)
+### AI 模型
+- Qwen API (使用提供的秘钥调用大模型)
+```
+
+## 第三步：从“依赖项安装包”复制依赖项到项目根目录
+## 第四步：在 supabase.com 创建一个 postgre sql 免费数据库
+|#|步骤|说明|链接|
+|--|--|--|--|
+|1|注册一个免费 supabase 账号| 免费账号可创建两个数据库实例 | https://supabase.com/dashboard/sign-up |
+|2|完善账户信息| 需要建一个初始组织 | https://supabase.com/dashboard/new|
+|3|创建一个新 project | https://supabase.com/dashboard/new/mbemlvlwsvnyipqbdzfe|
+|4|将数据库 url 记录下来| | |
+## 第五步 找到千问 API Key 设置
+### 1. 找到你们组的API Key
+|#|组名|预分配的千问 API Key|
+|--|--|--|
+|1|第一组|sk-c6b4118e7fa94355bd41b837705db5c4|
+|2|第二组|sk-fc05bf05da8f4aadbc56e65007775467|
+|3|第三组|sk-496526ca729a4b0298a67a85974d0a53|
+|4|第四组|sk-1d11cb64d99d42289590ca8a36874ac1|
+|5|第五组|sk-392f4586ac0448ccb5de87b08cdf1907|
+|6|第六组|sk-674381660f7d4cc3a46b1f3b63fac63a|
+
+### 2. Base URL
+https://dashscope.aliyuncs.com/compatible-mode/v1
+
+### 3. 在开发工具中编辑 .env 文件
+```
+DASHSCOPE_API_KEY=your-api-key
+DASHSCOPE_BASE_URL=your-db-url
+DASHSCOPE_MODEL=qwen-plus
+PORT=3000
+```
+
+
+
+## 4. prompt to AI:
+```
+我的依赖项都满足条件了吗?
+```
+## 5. 挑战：让AI建议工程目录结构

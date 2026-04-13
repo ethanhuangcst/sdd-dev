@@ -3,3 +3,6 @@
 
 # System files
 .DS_Store
+
+# Secrets
+qwen-api-keys.md
